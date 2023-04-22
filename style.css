@@ -1,0 +1,74 @@
+html, body {
+    margin: auto;
+    margin-top: 2vh;
+    padding: 0; 
+    background-color:#ffe4c4;  
+    font-family: curvy;
+    max-width: 600px;
+  
+  }
+
+  canvas {
+    background-color: blue;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    display: block;
+    width: 800px;
+  }
+
+  @font-face {
+    font-family: "curvy";
+    src: url("Snell.otf");
+  }
+
+  button {
+    font-family: curvy;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: antiquewhite;
+    border-radius: 9px;
+    border: 2px solid;
+    padding: 3px;
+  }
+
+  button:hover {
+    box-shadow: 5px 5px 0px rgba(100, 4, 173, 0.9);
+  }
+  
+  h1{
+    font-size:7vh;
+  }
+
+  .tea {
+    position: absolute;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: -175px;
+    margin-right: auto;
+    margin-top: calc(10vh + 25px);
+    display: inline-block;
+    height: 350px;
+    width: 350px;
+    background-color: rgba(92, 49, 9, 0.926);
+    border-radius: 50%; 
+    color: white;
+    font-size: 35px;
+  }
+
+  @keyframes drink {
+    from {
+      opacity: 100;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
+.tea:hover{
+  animation-name: drink;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+ }
